@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krezier Computer Shop</title>
+    <link rel="stylesheet" href="home.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="home1.html"><img src="images/logo.png" alt="logo" style="width: 50px;"></a>
+        <button class="hamburger" aria-label="Toggle navigation">
+            &#9776;
+        </button>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="pages/aboutus.html">About</a>
+            <div class="dropdown">
+                <a href="#">Shop</a>
+                <div class="dropdown-content">
+                    <a href="pages/consoles.html" style="margin: 0px;">Console</a>
+                    <a href="pages/headphones.html" style="margin: 0px;">Headphones</a>
+                    <a href="pages/keyboards.html"style="margin: 0px;">Keyboard</a>
+                    <a href="pages/laptops.html"style="margin: 0px;">Laptop</a>
+                    <a href="pages/mouse.html"style="margin: 0px;">Mouse</a>
+                </div>
+            </div>
+            <a href="#">Contact</a>
+            <button class="btnLogin-popup" onclick="alert('Logged out successfully'); window.location.href='home.html';">Logout</button>
+        </nav>
+    </header>
+
+    <div class="content">
+        <!-- Slider Section -->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide slide-1">Welcome to KREZIER</div>
+                <div class="slide slide-2" onClick="location.href='/pages/keyboards.html'">KEYBOARDS</div>
+                <div class="slide slide-3" onClick="location.href='/pages/mouse.html'">MOUSE</div>
+                <div class="slide slide-4" onClick="location.href='/pages/laptops.html'">LAPTOPS</div>
+                <div class="slide slide-5" onClick="location.href='/pages/headphones.html'">HEADPHONES</div>
+                <div class="slide slide-6" onClick="location.href='/pages/consoles.html'">CONSOLES</div>
+            </div>
+            <div class="navigation-buttons">
+                <button class="nav-button prev">❮</button>
+                <button class="nav-button next">❯</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="enhanced-product-slider">
+        <h2 style="text-align: center; color: white; margin-top: 50px;">Explore Our Products</h2>
+        <div class="product-carousel">
+            <div class="product-card">
+                <img src="images/andras-vas-Bd7gNnWJBkU-unsplash.jpg" alt="Laptop1">
+                <h3>Laptops</h3>
+                <p>High-performance Gaming Laptops for Gamers.</p>
+            </div>
+            <div class="product-card">
+                <img src="images/rezwan-ahmed-C1uFlpNdQh0-unsplash.jpg" alt="Headphone1">
+                <h3>Headphones</h3>
+                <p>High Quality Audio for Gaming.</p>
+            </div>
+            <div class="product-card">
+                <img src="images/nischal-kanishk-iuAGCwoY2YA-unsplash.jpg" alt="Mouse1">
+                <h3>Mouse</h3>
+                <p>Precision Gaming Mouse with customizable DPI settings.</p>
+            </div>
+            <div class="product-card">
+                <img src="images/blurrystock-HIbAmybJHVs-unsplash.jpg" alt="Keyboard1">
+                <h3>Gaming Keyboard</h3>
+                <p>Durable Gaming Keyboard with Tactile keys.</p>
+            </div>
+            <div class="product-card">
+                <img src="images/fullsizerender-11-scaled.webp" alt="Console1">
+                <h3>Consoles</h3>
+                <p>Portable Gaming Console with a versatile design and vibrant HD display.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=600" alt="High-Performance Laptop">
+                <h3>High-Performance Laptop</h3>
+                <p>Top-notch laptops for work and play.</p>
+            </div>
+        </div>
+        <div class="product-nav">
+            <button class="product-prev">&#10094;</button>
+            <button class="product-next">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="poster-container">
+        <div class="poster-item">
+            <img src="https://images.pexels.com/photos/4298306/pexels-photo-4298306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Poster 1">
+            <div class="poster-info">
+                <h3 class="poster-title">Consoles</h3>
+                <p class="poster-description">Cutting-edge gaming systems offering immersive gameplay, exclusive titles, and a seamless entertainment experience.</p>
+            </div>
+        </div>
+        
+        <div class="poster-item">
+            <img src="https://images.pexels.com/photos/5944189/pexels-photo-5944189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Poster 2">
+            <div class="poster-info">
+                <h3 class="poster-title">Keyboards</h3>
+                <p class="poster-description">Responsive and comfortable keyboards built for fast typing and gaming, available in various designs and styles.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="poster-container">
+        <div class="poster-item">
+            <img src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Poster 1">
+            <div class="poster-info">
+                <h3 class="poster-title">Headphones</h3>
+                <p class="poster-description">High-quality audio devices designed for clear sound, deep bass, and comfort, ideal for music lovers and gamers alike.</p>
+            </div>
+        </div>
+        
+        <div class="poster-item">
+            <img src="https://images.pexels.com/photos/19012033/pexels-photo-19012033/free-photo-of-gaming-computer-mouse.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Poster 2">
+            <div class="poster-info">
+                <h3 class="poster-title">Mouse</h3>
+                <p class="poster-description">Ergonomically designed input devices for precise control, enhancing your computing experience for both work and gaming.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="poster-container">
+        <div class="poster-item">
+            <img src="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Poster 1">
+            <div class="poster-info">
+                <h3 class="poster-title">Laptops</h3>
+                <p class="poster-description">Portable and powerful devices that combine performance and convenience for productivity, entertainment, and gaming on the go..</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ComCamp. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="pages/aboutus.html">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+<script src="home.js"></script>
+
+
+</body>
+
+</html>

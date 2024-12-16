@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krezier - Mouse</title>
+    <link rel="stylesheet" href="../lp.css">
+
+    <style>
+        @import url("../style.css");
+    </style>
+
+</head>
+<body>
+    <!-- Additional Header -->
+    <header>
+        <a href="../home1.html"><img src="../images/logo.png" alt="logo" style="width: 50px;"></a>
+        <button class="hamburger" aria-label="Toggle navigation">
+            &#9776;
+        </button>
+        <nav class="navigation">
+            <a href="../home1.html">Home</a>
+            <a href="aboutus.html">About</a>
+            <div class="dropdown">
+                <a href="#">Shop</a>
+                <div class="dropdown-content">
+                    <a href="consoles.html">Console</a>
+                    <a href="headphones.html">Headphones</a>
+                    <a href="keyboards.html">Keyboard</a>
+                    <a href="laptops.html">Laptop</a>
+                    <a href="mouse.html">Mouse</a>
+                </div>
+            </div>
+            <a href="#">Contact</a>
+            <a href="#" class="cart-button" onclick="openCartPopup()">Cart (0)</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Laptops Section -->
+        <section id="laptops" class="category-section">
+            <h2>Mouse</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="../images/mouse1.png" alt="ASUS ROG P714 Keris II Ace">
+                    <h3>ASUS ROG P714 Keris II Ace Ultralight Wireless Gaming Mouse | White</h3>
+                    <p>Point-and-Click Precision.</p>
+                    <p><strong>₱7,500.00</strong></p>
+                    <button onclick="addToCart('ASUS ROG P714 Keris II Ace', 7500)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="../images/mouse2.png" alt="Razer DeathAdder V3 HyperSpeed Ultra-lightweight">
+                    <h3>Razer DeathAdder V3 HyperSpeed Ultra-lightweight Wireless Ergonomic Esports Mouse</h3>
+                    <p>Compact and Reliable.</p>
+                    <p><strong>₱6,295.00</strong></p>
+                    <button onclick="addToCart('Razer DeathAdder V3 HyperSpeed Ultra-lightweight', 6295)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="../images/mouse3.png" alt="Logitech G309 Lightspeed Wireless">
+                    <h3>Logitech G309 Lightspeed Wireless Gaming Mouse | White</h3>
+                    <p>Perfect for All Tasks.</p>
+                    <p><strong>₱4,695.00</strong></p>
+                    <button onclick="addToCart('Logitech G309 Lightspeed Wireless', 4695)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Popup -->
+<div id="cart-popup" class="cart-popup">
+    <div class="cart-content">
+        <!-- Close Button Inside the Popup -->
+        <button class="close-btn" onclick="closeCartPopup()">×</button>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p id="cart-total">Total: ₱0.00</p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 ComCamp. All Rights Reserved.</p>
+        <ul class="footer-links">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+        </ul>
+    </div>
+</footer>
+
+    <script src="../lp.js"></script>
+</body>
+</html>

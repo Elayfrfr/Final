@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krezier - Laptops</title>
+    <link rel="stylesheet" href="../lp.css">
+
+    <style>
+        @import url("../style.css");
+    </style>
+
+</head>
+<body>
+    <!-- Additional Header -->
+    <header>
+        <a href="../home1.html"><img src="../images/logo.png" alt="logo" style="width: 50px;"></a>
+        <button class="hamburger" aria-label="Toggle navigation">
+            &#9776;
+        </button>
+        <nav class="navigation">
+            <a href="../home1.html">Home</a>
+            <a href="aboutus.html">About</a>
+            <div class="dropdown">
+                <a href="#">Shop</a>
+                <div class="dropdown-content">
+                    <a href="consoles.html">Console</a>
+                    <a href="headphones.html">Headphones</a>
+                    <a href="keyboards.html">Keyboard</a>
+                    <a href="laptops.html">Laptop</a>
+                    <a href="mouse.html">Mouse</a>
+                </div>
+            </div>
+            <a href="#">Contact</a>
+            <a href="#" class="cart-button" onclick="openCartPopup()">Cart (0)</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Laptops Section -->
+        <section id="laptops" class="category-section">
+            <h2>Laptops</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="../images/laptop1.jpg" alt="LENOVO LOQ 15IRX9">
+                    <h3>LENOVO LOQ 15IRX9 83DV00E8PH 15.6″ FHD 144Hz | i5-13450HX | RTX 4050 | 8GB DDR5 | 512GB SSD</h3>
+                    <p>High-performance gaming laptop.</p>
+                    <p><strong>₱59,995.00</strong></p>
+                    <button onclick="addToCart('LENOVO LOQ 15IRX9 83DV00E8PH', 59995)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="../images/laptop2.jpg" alt="MSI Thin 15 B12UC-1435PH">
+                    <h3>MSI Thin 15 B12UC-1435PH 15.6 FHD | Intel Core i5-12450H | 3050 GDDR6 4GB | 16GB DDR4 (8GB*2) | 512GB SSD</h3>
+                    <p>Compact and powerful.</p>
+                    <p><strong>₱47,995.00</strong></p>
+                    <button onclick="addToCart('MSI Thin 15 B12UC-1435PH', 47995)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="../images/laptop3.webp" alt="ASUS TUF Gaming A16">
+                    <h3>ASUS TUF Gaming A16 Advantage Edition FA617NS-N3086W [Sandstorm] 16″ 165Hz FHD+| Ryzen 7 7735HS | RX 7600S | 8GB DDR5 | 512GB SSD</h3>
+                    <p>Perfect for hardcore gamers.</p>
+                    <p><strong>₱79,990.00</strong></p>
+                    <button onclick="addToCart('ASUS TUF Gaming A16 Advantage Edition', 79990)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Popup -->
+<div id="cart-popup" class="cart-popup">
+    <div class="cart-content">
+        <!-- Close Button Inside the Popup -->
+        <button class="close-btn" onclick="closeCartPopup()">×</button>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p id="cart-total">Total: ₱0.00</p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 ComCamp. All Rights Reserved.</p>
+        <ul class="footer-links">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+        </ul>
+    </div>
+</footer>
+
+    <script src="../lp.js"></script>
+</body>
+</html>

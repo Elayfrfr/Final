@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krezier - Headphones</title>
+    <link rel="stylesheet" href="../lp.css">
+
+    <style>
+        @import url("../style.css");
+    </style>
+
+</head>
+<body>
+    <!-- Additional Header -->
+    <header>
+        <a href="../home1.html"><img src="../images/logo.png" alt="logo" style="width: 50px;"></a>
+        <button class="hamburger" aria-label="Toggle navigation">
+            &#9776;
+        </button>
+        <nav class="navigation">
+            <a href="../home1.html">Home</a>
+            <a href="aboutus.html">About</a>
+            <div class="dropdown">
+                <a href="#">Shop</a>
+                <div class="dropdown-content">
+                    <a href="consoles.html">Console</a>
+                    <a href="headphones.html">Headphones</a>
+                    <a href="keyboards.html">Keyboard</a>
+                    <a href="laptops.html">Laptop</a>
+                    <a href="mouse.html">Mouse</a>
+                </div>
+            </div>
+            <a href="#">Contact</a>
+            <a href="#" class="cart-button" onclick="openCartPopup()">Cart (0)</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Laptops Section -->
+        <section id="laptops" class="category-section">
+            <h2>Headphones</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="../images/headphone1.png" alt="JBL Tour One M2 Wireless">
+                    <h3>JBL Tour One M2 Wireless Over-ear Noise Cancelling Headphones – Black</h3>
+                    <p>Immersive Sound.</p>
+                    <p><strong>₱13,950.00</strong></p>
+                    <button onclick="addToCart('JBL Tour One M2 Wireless', 13950)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="../images/headphone2.png" alt="Sony WH-CH720N">
+                    <h3>Sony WH-CH720N Lightweight Wireless Noise-Canceling Headphones | Black</h3>
+                    <p>Comfortable Fit.</p>
+                    <p><strong>₱7,999.00</strong></p>
+                    <button onclick="addToCart('Sony WH-CH720N Lightweight', 7999)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="../images/headphone3.png" alt="Razer Kraken X">
+                    <h3>Razer Kraken X Lite Essential Wired Gaming Headset – Black</h3>
+                    <p>Noise Isolation.</p>
+                    <p><strong>₱1,995.00</strong></p>
+                    <button onclick="addToCart('Razer Kraken X Lite Essentialn', 1995)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Popup -->
+<div id="cart-popup" class="cart-popup">
+    <div class="cart-content">
+        <!-- Close Button Inside the Popup -->
+        <button class="close-btn" onclick="closeCartPopup()">×</button>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p id="cart-total">Total: ₱0.00</p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 ComCamp. All Rights Reserved.</p>
+        <ul class="footer-links">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+        </ul>
+    </div>
+</footer>
+
+    <script src="../lp.js"></script>
+</body>
+</html>

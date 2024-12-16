@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="">
+    <style>
+        @import url('../style.css');
+
+    main {
+    padding: 20px;
+    background-color: #f4f4f4;
+    width: 600px;
+    border-radius: 10px;
+    }
+
+    #cart-review, #checkout-form {
+        background: white;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 400px ;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form label {
+        margin-bottom: 4px;
+        font-weight: bold;
+    }
+
+    form input, form textarea {
+        margin-bottom: 20px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    form input[type="radio"] {
+        margin-right: 10px;
+    }   
+
+    form button {
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    form button:hover {
+        background-color: #0056b3;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #cart-items {
+        margin-bottom: 20px;
+    }
+
+    #cart-total {
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <!-- Original Header -->
+    <header>
+        <a href="../pages/home.html"><img src="../Images/logo.png" alt="logo" style="width: 50px;"></a>
+        <button class="hamburger" aria-label="Toggle navigation">
+            &#9776;
+        </button>
+        <nav class="navigation">
+            <a href="../index.html">Home</a>
+            <a href="../pages/aboutus.html">About</a>
+            <!-- Shop with dropdown -->
+            <div class="dropdown">
+                <a href="#">Shop</a>
+                <div class="dropdown-content">
+                    <a href="../pages/consoles.html">Console</a>
+                    <a href="../pages/headphones.html">Headphones</a>
+                    <a href="../pages/keyboards.html">Keyboard</a>
+                    <a href="../pages/laptops.html">Laptop</a>
+                    <a href="../pages/mouse.html">Mouse</a>
+                </div>
+            </div>
+            <a href="../pages/contact.html">Contact</a>
+            <a href="../pages/checkout.html" onclick="openCartPopup()"><p id="cartcount">Cart(0)</p></a>
+        </nav>
+    </header>
+
+    <main style="margin-top: 150px;">
+        <section id="cart-review">
+            <h2>Review Your Cart</h2>
+            <div id="cart-items"></div>
+            <p id="cart-total">Total: ₱0.00</p>
+        </section>
+
+        <section id="checkout-form">
+            <h2>Customer Information</h2>
+            <form id="checkoutForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+
+                <label for="payment">Payment Method:</label>
+
+                <select id="payment" name="payment" required>
+                    <option value="" disabled selected>Select a payment method</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="cash-on-delivery">Cash on Delivery</option>
+                </select>
+
+                <button type="submit" style="margin-top: 10px;">Place Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer" style="margin-top: 20px;">
+        <div class="container">
+            <p>&copy; 2024 KREZIER Online Shop. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="shop.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../checkout.js"></script>
+</body>
+</html>
